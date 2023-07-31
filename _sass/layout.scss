@@ -580,6 +580,14 @@ nav > ul li a:active {
 	height: 80px;
 	margin-left: 30px;
 	margin-right: 30px;
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+	.awards {
+		margin-top: 11px;
+		margin-bottom: 60px;
+	}
 }
 
 // Feature List
