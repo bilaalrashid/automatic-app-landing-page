@@ -51,7 +51,9 @@
                             </p>
                         </div>
                         <div class="downloadButtonsContainer">
-                            <a class="appStoreLink" href="{{site.appstore_link}}" target="_blank"><img class="appStore" src="assets/appstore.svg"></a>
+                            {% if site.appstore_link %}
+                                <a class="appStoreLink" href="{{site.appstore_link}}" target="_blank"><img class="appStore" src="assets/appstore.svg"></a>
+                            {% endif %}
                             {% if site.mac_appstore_link %}
                                 <a class="macAppStoreLink" href="{{site.mac_appstore_link}}" target="_blank"><img class="macAppStore" src="assets/macappstore.svg"></a>
                             {% endif %}
