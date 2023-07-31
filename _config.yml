@@ -37,7 +37,12 @@ github_username                           : emilbaehr
 youtube_username                          :
 mastodon_link                             : https://mastodon.social/@ebaehr
 
+# # Award List                              Edit, add or remove features to be presented.
+# awards                                    :
 
+#   - title                                 : # New Award Title
+#     url                                   : # New Award URL
+#     image                                 : # New Award Image
 
 # Feature List                            Edit, add or remove features to be presented.
 features                                  :

@@ -550,11 +550,41 @@ nav > ul li a:active {
 	
 } 
 
+// Awards List
+
+.main-content {
+	grid-area: c;
+}
+
+.awards {
+	margin-top: 93px;
+}
+
+.awards h3 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.awards-container {
+	display: flex;
+	flex: 0 1 auto;
+	align-content: flex-start;
+	justify-content: center;
+	flex-grow: 1;
+	flex-wrap: wrap;
+}
+
+.award img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+	height: 80px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
 
 // Feature List
 
 .features {
-	grid-area: c;
 	display: flex;
 	flex: 0 1 auto;
 	align-content: flex-start;

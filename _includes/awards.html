@@ -1,0 +1,16 @@
+{% if site.awards %}
+  <div class="awards">
+    <h3>As Featured In</h3>
+    <div class="awards-container">
+      {% for award in site.awards %}
+      {% if award.title %}
+        <div class="award">
+          <a href="{{ award.url }}" target="_blank">
+            <img src="{{ award.image }}" alt="{{ award.title }}" />
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+{% endif %}
