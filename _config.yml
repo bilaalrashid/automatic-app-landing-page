@@ -23,6 +23,10 @@ enable_smart_app_banner                   : true                                
 matomo_site_url                           : https://matomo.org/                       # The URL of the Matomo instance to use.                           
 matomo_site_id                            : 0                                         # The Site ID of the Matomo site to track.
 
+# Product Hunt
+product_hunt_link                         :                                           # The URL of the Product Hunt webpage.                        
+product_hunt_image_url                    :                                           # The URL of the Product Hunt badge
+
 # Information About Yourself
 your_name                                 : Emil Baehr                                
 your_link                                 : https://emilbaehr.com                     

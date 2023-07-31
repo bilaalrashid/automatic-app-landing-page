@@ -731,10 +731,14 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding-top: 70px;
+}
+
+.productHunt {
+	padding-bottom: 30px;
 }
 
 .footerIcons {
-	padding-top: 70px;
 	padding-bottom: 30px;
 	display: flex;
 	flex: 0 0 100%;

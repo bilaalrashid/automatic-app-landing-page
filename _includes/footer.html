@@ -1,4 +1,10 @@
 <footer>
+	{% if site.product_hunt_link %}
+		<a href="{{ site.product_hunt_link }}" class="productHunt" target="_blank">
+			<img src="{{ site.product_hunt_image_url }}" style="width: 250px; height: 54px;" width="250" height="54" />
+		</a>
+	{% endif %}
+
 	<div class="footerIcons">
 
 		{% if site.facebook_username %}
