@@ -349,14 +349,14 @@ nav > ul li a:active {
 
 .playStore {
 	height: 75px;
-	margin-right: 24px;
+	margin-right: 8px;
+	margin-bottom: 8px;
 }
 
 @media only screen and (max-width: 992px) {
 
 	.playStore {
-		margin-right: 24px;
-		margin-bottom: 0px;
+		margin-right: 8px;
 	}
 	
 } 
@@ -365,15 +365,97 @@ nav > ul li a:active {
 
 	.playStore {
 		margin-right: 0px;
-		margin-bottom: 24px;
+	}
+	
+} 
+
+.chromeWebStore {
+	height: 75px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 992px) {
+
+	.chromeWebStore {
+		margin-right: 8px;
+	}
+	
+} 
+
+@media only screen and (max-width: 528px) {
+
+	.chromeWebStore {
+		margin-right: 0px;
+	}
+	
+} 
+
+.firefoxAddon {
+	height: 75px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 992px) {
+
+	.firefoxAddon {
+		margin-right: 8px;
+	}
+	
+} 
+
+@media only screen and (max-width: 528px) {
+
+	.firefoxAddon {
+		margin-right: 0px;
+	}
+	
+} 
+
+.macAppStore {
+	height: 75px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 992px) {
+
+	.macAppStore {
+		margin-right: 8px;
+	}
+	
+} 
+
+@media only screen and (max-width: 528px) {
+
+	.macAppStore {
+		margin-right: 0px;
 	}
 	
 } 
 
 .appStore {
 	height: 75px;
+	margin-right: 8px;
+	margin-bottom: 8px;
 }
 
+@media only screen and (max-width: 992px) {
+
+	.appStore {
+		margin-right: 8px;
+	}
+	
+} 
+
+@media only screen and (max-width: 528px) {
+
+	.appStore {
+		margin-right: 0px;
+	}
+	
+} 
 
 
 // iPhone Device Preview

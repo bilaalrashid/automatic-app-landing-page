@@ -51,10 +51,19 @@
                             </p>
                         </div>
                         <div class="downloadButtonsContainer">
-                            {% if site.playstore_link %}
-                                <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="assets/playstore.png"></a>
+                            <a class="appStoreLink" href="{{site.appstore_link}}" target="_blank"><img class="appStore" src="assets/appstore.svg"></a>
+                            {% if site.mac_appstore_link %}
+                                <a class="macAppStoreLink" href="{{site.mac_appstore_link}}" target="_blank"><img class="macAppStore" src="assets/macappstore.svg"></a>
                             {% endif %}
-                            <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="assets/appstore.png"></a>
+                            {% if site.playstore_link %}
+                                <a class="playStoreLink" href="{{site.playstore_link}}" target="_blank"><img class="playStore" src="assets/playstore.png"></a>
+                            {% endif %}
+                            {% if site.chrome_web_store_link %}
+                                <a class="chromeWebStoreLink" href="{{site.chrome_web_store_link}}" target="_blank"><img class="chromeWebStore" src="assets/chromewebstore.png"></a>
+                            {% endif %}
+                            {% if site.firefox_addon_link %}
+                                <a class="firefoxAddonLink" href="{{site.firefox_addon_link}}" target="_blank"><img class="firefoxAddon" src="assets/firefoxaddon.svg"></a>
+                            {% endif %}
                         </div>
                     </div>
                     {% include features.html %}

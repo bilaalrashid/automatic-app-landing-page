@@ -6,7 +6,10 @@ ios_app_id                                : 1234793120                          
 ios_app_country                           : us                                        # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
 appstore_link                             :                                           # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
+mac_appstore_link                         :                                           # Enter Mac App Store URL.
 playstore_link                            :                                           # Enter Google Play Store URL.
+chrome_web_store_link                     :                                           # Enter Chrome Web Store URL.
+firefox_addon_link                        :                                           # Enter Fixfox addon URL.
 external_contact_link                     : https://emilbaehr.com                     # Enter an external link
 
 app_icon                                  : # assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
