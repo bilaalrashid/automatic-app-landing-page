@@ -22,7 +22,9 @@ enable_smart_app_banner                   : true                                
 # Information About Yourself
 your_name                                 : Emil Baehr                                
 your_link                                 : https://emilbaehr.com                     
-your_city                                 : Copenhagen                                
+your_city                                 : Copenhagen     
+
+# Social Icons
 email_address                             : emil.baehr@gmail.com
 facebook_username                         :                                           
 instagram_username                        : ebaehr
