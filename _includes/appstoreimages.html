@@ -21,7 +21,7 @@ $(function() {
             // Set page title using the iOS app ID if it is not set manually in _config.yml
             var $pageTitle = $(".pageTitle");
             if ($.trim($($pageTitle).text()).length == 0) {
-                $($pageTitle).html(appInfo.trackName);
+                $($pageTitle).html(`${appInfo.trackName} - {{ site.app_description }}`);
             }
 
             // Set large app icon using the iOS app ID if it is not set manually in _config.yml
