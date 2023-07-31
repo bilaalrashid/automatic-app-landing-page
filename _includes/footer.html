@@ -60,8 +60,8 @@
 		{% for page in site.pages %}
 			<a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a>
 		{% endfor %}
-		{% if site.presskit_download_link %}
-			<a href="{{ site.presskit_download_link }}">Press Kit</a>
+		{% if site.external_contact_link %}
+			<a href="{{ site.external_contact_link }}">Contact</a>
 		{% endif %}
 	</div>
 	{% if site.your_name %}
