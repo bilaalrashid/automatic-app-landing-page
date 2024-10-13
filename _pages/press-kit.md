@@ -13,11 +13,13 @@ include_in_header: true
 **Languages:** English<br/>
 **Privacy Label:** No Data Collected<br/>
 **Age Rating:** 17+<br/>
-**App Store:** [Download]{{ site.appstore_link }}
+{% if site.appstore_link %}**App Store:** [Download]({{ site.appstore_link }}){% endif %}
 
+{% if site.external_contact_link %}
 ## Press Access
 
 To access a free review unit of the app, please get in [contact]({{ site.external_contact_link }}).
+{% endif %}
 
 ## Features
 
