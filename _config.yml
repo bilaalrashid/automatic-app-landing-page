@@ -12,6 +12,7 @@ playstore_link                            :                                     
 chrome_web_store_link                     :                                           # Enter Chrome Web Store URL.
 firefox_addon_link                        :                                           # Enter Fixfox addon URL.
 external_contact_link                     : https://emilbaehr.com                     # Enter an external contact link
+github_repo_link                          : https://github.com/bilaalrashid/ReadBeeb  # Enter a link to a GitHub Repo
 
 app_icon                                  : # assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name                                  :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
