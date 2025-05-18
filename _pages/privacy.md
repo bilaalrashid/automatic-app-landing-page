@@ -2,6 +2,7 @@
 layout: page
 title: Privacy
 include_in_header: false
+include_in_footer: true
 ---
 
 **Last updated**  
