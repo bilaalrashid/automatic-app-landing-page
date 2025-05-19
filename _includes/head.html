@@ -15,13 +15,90 @@
 
 	<script type="application/ld+json">
 		{
-			"@context" : "https://schema.org",
 			"@type" : "WebSite",
 			"name" : "{{ site.page_title }}",
 			"url" : "{{ site.domain }}"
+			"mainEntityOfPage": {
+				"@type": "WebPage",
+				"@id": "{{ site.domain }}"
+			},
+			"publisher": {
+				"@type": "Organization",
+				"name": "{{ site.page_title }}",
+				"url": "{{ site.domain }}"
+			},
+			{% if page.date %}
+			  "datePublished": "{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}",
+  			"dateModified": "{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}",
+			{% endif %}
+			{% if page.title %}
+			  "headline": "{{ page.title }}",
+			{% endif %}
+			{% if page.description %}
+			  "description": "{{ page.description }}",
+			{% endif %}
+			{% if page.author %}
+				"author": {
+					"@type": "Person",
+					"name": "{{ page.author }}"
+				},
+			{% endif %}
+			"url": "{{ page.url | absolute_url }}",
+			"@context" : "https://schema.org"
 		}
 	</script>
 	
+	<link rel="canonical" href="{{ page.url | absolute_url }}" />
+	{% if page.description %}
+	<meta name="description" content="{{ page.description }}">
+	{% endif %}
+	{% if page.author %}
+	<meta name="author" content="{{ page.author }}">
+	{% endif %}
+
+	{% if page.title %}
+	<meta property="og:title" content="{{ page.title }}">
+	{% endif %}
+	{% if page.description %}
+	<meta property="og:description" content="{{ page.description }}">
+	{% endif %}
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="{{ page.url | absolute_url }}">
+	{% if page.image %}
+	<meta property="og:image" content="{{ site.domain }}{{ page.image }}">
+	{% endif %}
+
+	<meta property="article:section" content="posts">
+	{% if page.date %}
+	<meta property="article:published_time" content="{{ page.date | date: '%Y-%m-%dT%H:%M:%S+00:00' }}">
+	<meta property="article:modified_time" content="{{ page.date | date: '%Y-%m-%dT%H:%M:%S+00:00' }}">
+	{% endif %}
+
+	<meta name="twitter:card" content="summary_large_image">
+	{% if page.image %}
+	<meta name="twitter:image" content="{{ site.domain }}{{ page.image }}">
+	{% endif %}
+	{% if page.title %}
+	<meta name="twitter:title" content="{{ page.title }}">
+	{% endif %}
+	{% if page.description %}
+	<meta name="twitter:description" content="{{ page.description }}">
+	{% endif %}
+
+	{% if page.title %}
+	<meta itemprop="name" content="{{ page.title }}">
+	{% endif %}
+	{% if page.description %}
+	<meta itemprop="description" content="{{ page.description }}">
+	{% endif %}
+	{% if page.date %}
+	<meta itemprop="datePublished" content="{{ page.date | date: '%Y-%m-%dT%H:%M:%S+00:00' }}">
+	<meta itemprop="dateModified" content="{{ page.date | date: '%Y-%m-%dT%H:%M:%S+00:00' }}">
+	{% endif %}
+	{% if page.image %}
+	<meta itemprop="image" content="{{ site.domain }}{{ page.image }}">
+	{% endif %}
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<link rel="stylesheet" href="{{ '/main.css' | relative_url }}">
 
